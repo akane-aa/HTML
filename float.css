@@ -1,0 +1,31 @@
+div {
+  color: #fff;
+  text-align: center;
+  line-height: 12rem;
+}
+.box {
+  width: 300px;
+  height: 200px;
+}
+#wrapper {
+  background-color: #ecfafb;
+  margin: 5rem auto;
+  width: 900px;
+}
+#first {
+  background-color: #4aa6b5;
+  float: left;
+}
+#second {
+  background-color: #d6c481;
+  float: left;
+}
+#third {
+  background-color: #81cbc8;
+  float: left;
+}
+#wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
