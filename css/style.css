@@ -22,6 +22,7 @@ a:hover {
   text-align: center;
   padding: 2rem 0;
 }
+
 header .contentWrapper {
   padding-top: 18rem;
 }
@@ -147,4 +148,77 @@ small {
   display: block;
 }
 @media screen and (max-width: 480px) {
+  img{
+    border 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .contentWrapper {
+    width: 90%;
+}
+header nav{
+  background: rgba(255, 255, 255, 0.85);
+  position:relative;
+  z-index: 1;
+  display: none;
+}
+header nav u1{
+  display: block;
+  padding: 20px 0 12rem 0;
+}
+header nav li{
+  font-size: 0.85rem;
+  padding: 20px;
+  color: #606060;
+  border-bottom: 1px solid rgba(118, 123, 133, 0.3);
+  text-align: center;
+}
+header nav a{
+  color: #333;
+  font-weight: normal;
+  text-shadow: none;
+}
+header nav a: hover{
+  color: #1861ae!important;
+}
+#menuWrapper{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 15px 15px 10px 15px;
+  box-sizing:border-box;
+}
+.trigger,.trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+.trigger{
+  position: relative;
+  width:35px;
+  height:30px;
+}
+.trigger span{
+  position: absolute;
+  left:0;
+  width:100%;
+  height: 5px;
+  background-color: #718085;
+  border-radius: 4px;
+  opacity: 1;
+}
+.trigger a:hover{
+  opacity: 1;
+}
+.trigger span:nth-of-type(1){
+  top: 0;
+}
+.trigger span:nth-of-type(2){
+  top: 12px;
+}
+.trigger span:nth-of-type(3){
+  bottom: 0;
+}
+  .flex{
+    display: block;
+  }
 }
