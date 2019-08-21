@@ -158,7 +158,7 @@ small {
 }
 header nav{
   background: rgba(255, 255, 255, 0.85);
-  position:relative;
+  position:fixed;
   z-index: 1;
   display: none;
 }
@@ -217,6 +217,26 @@ header nav a: hover{
 }
 .trigger span:nth-of-type(3){
   bottom: 0;
+}
+.trigger.active span:nth-of-type(1){
+  -webkit-transform: translateY(10px) rotate(-45deg);
+  transform: translateY(10px) rotate(-45deg);
+}
+.trigger.active span:nth-of-type(2){
+  left: 50%;
+  opacity: 0;
+  -webkit-animation: active-menu-bar02 .8s forwards;
+  animation: active-menu-bar02 .8s forwards;
+}
+@-webkit-keyframes active-menu-bar02{ 100%{height: 0;}}
+@keyframes active-menu-bar02 {100%{height: 0;}}
+
+.trigger.active span:nth-of-type(3){
+  -webkit-transform: translateY(-15px) rotate(45deg);
+  transform: translateY(-15px) rotate(45deg);
+}
+.onanimation{
+  display: block;
 }
   .flex{
     display: block;
