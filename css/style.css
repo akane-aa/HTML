@@ -21,6 +21,7 @@ a:hover {
   margin: 0 auto;
   text-align: center;
   padding: 2rem 0;
+
 }
 
 header .contentWrapper {
@@ -156,6 +157,25 @@ small {
   .contentWrapper {
     width: 90%;
 }
+header {
+  height: 300px;
+}
+.contentWrapper img {
+  width: 60%
+}
+h1 {
+  font-size: 1.3rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+header{
+  height: 300px
+}
+header .contentWrapper{
+  width: 100%;
+  padding-top: 8rem;
+}
 header nav{
   background: rgba(255, 255, 255, 0.85);
   position:fixed;
@@ -238,6 +258,43 @@ header nav a: hover{
 .onanimation{
   display: block;
 }
+#aboutus p{
+  font-size: 0.75rem;
+  line-height: 1.6rem;
+}
+#topics .flexcontent p{
+  margin:0 auto 3rem auto;
+}
+#topics figcaption{
+  font-size: 0.65rem;
+}
+
+#news dt {
+  width: 100%;
+  padding: 10px 0;
+}
+
+#news dd{
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#gallery p {
+  font-size: 1rem;
+}
+#upperFooter.contentWrapper,footer nav{
+  width: 100%;
+}
+#upperFooter li{
+  flex-grow: 1;
+  flex-basis: auto;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 1rem 0;
+  }
+  #upperFooter li:first-child{
+    border-top: 1px solid #c0c0c0;
+  }
   .flex{
     display: block;
   }
